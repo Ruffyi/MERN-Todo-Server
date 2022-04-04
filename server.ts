@@ -37,6 +37,11 @@ if (process.env.PROJECT_MODE === 'development') {
 
 const SERVER_PORT = process.env.SERVER_PORT || 5000;
 
+app.get('/', (req: Request, res: Response) => {
+	res.send({
+		message: 'HI!',
+	});
+});
 app.use('/api/v1/todos', todoRouter);
 
 app.all('*', NotFoundPage);
