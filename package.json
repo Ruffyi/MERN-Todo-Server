@@ -81,6 +81,7 @@
 		"graceful-fs": "^4.2.9",
 		"has-flag": "^3.0.0",
 		"has-yarn": "^2.1.0",
+		"heroku": "^7.60.1",
 		"http-cache-semantics": "^4.1.0",
 		"http-errors": "^1.8.1",
 		"iconv-lite": "^0.4.24",
@@ -184,15 +185,15 @@
 		"yn": "^3.1.1"
 	},
 	"scripts": {
-    "start":"node dist/server.js",
-    "postinstall":"tsc",
-    "watch-node":"nodemon dist/server.js",
-    "watch-ts":"tsc -w",
-    "deploy":"git add . && git commit -m Heroku && git push heroku master"
-  },
-  "engines":{
-    "node":"16.14.0"
-  },
+		"start": "node dist/server.js",
+		"postinstall": "tsc",
+		"watch-node": "nodemon dist/server.js",
+		"watch-ts": "tsc -w",
+		"deploy": "git add . && git commit -m Heroku && git push heroku master"
+	},
+	"engines": {
+		"node": "16.14.0"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
